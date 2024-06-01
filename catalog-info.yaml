@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: xrxqhxw-n-python-gitops
+  description: This is GitOps manifest for xrxqhxw-n-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: xrxqhxw-n-python
+    janus-idp.io/tekton: xrxqhxw-n-python 
+    backstage.io/kubernetes-id: xrxqhxw-n-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:xrxqhxw-n-python
